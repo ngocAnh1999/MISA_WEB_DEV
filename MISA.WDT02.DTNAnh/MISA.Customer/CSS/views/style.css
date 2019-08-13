@@ -1,0 +1,46 @@
+﻿/*
+    Thiết kế css chung cho phần body
+    Người tạo: Ngọc Ánh
+*/
+
+body {
+    overflow: hidden !important;
+    font-family: 'Roboto',Tahoma,sans-serif;
+    font-size: 13px;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+}
+/*
+    Căn chỉnh style cho table
+*/
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.uncheck {
+    background: url('../../Contents/icons/uncheck.png') no-repeat center;
+    width: 24px;
+    height: 100%;
+    background-position: 2px 17px;
+}
+.row-selected {
+    background-color: #00ffff !important;
+}
+.select, .tick {
+    background-color: #8ae9cc !important;
+    
+}
+.check {
+    width: 24px;
+    height: 100%;
+    background: url('../../Contents/icons/check.png') no-repeat;
+    background-position: 2px 17px;
+}

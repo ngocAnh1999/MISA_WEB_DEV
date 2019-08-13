@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>misard | MShopKeeper.vn</title>
+    <link href="../CSS/libraries/jquery-ui.css" rel="stylesheet" />
+    <link href="../CSS/views/header.css" rel="stylesheet" />
+    <link href="../CSS/views/menu.css" rel="stylesheet" />
+    <link href="../CSS/views/style.css" rel="stylesheet" />
+    <link href="../CSS/views/demo.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Phần header-->
+    <div class="header">
+        <div class="header-left">
+            <div class="title-header">
+                <div class="title-header-content">Khách hàng</div>
+            </div>
+            
+        </div>
+
+        <div class="header-right">
+            <div class="contain-over">
+                <select class="cbo-header">
+                    <option>misard</option>
+                </select>
+                <div class="user-panel">
+                    <div class="img-user"></div>
+                    <span>admin</span>
+                    <div class="arrow-down-black">
+                    </div>
+                </div>
+            </div>
+            <div class="icon notification"></div>
+            <div class="icon helpcenter"></div>
+            
+        </div>
+    </div>
+    <!--Phần menu-->
+    <div class="nav-menu">
+        <div class="logo-mshop">
+            <a class="link-logo" href="#">
+                <img src="../Contents/images/logo-mshopkeeper.png" />
+            </a>
+        </div>
+        <div class="left-menu-inner">
+            <div class="center-content-menu">
+                <a class="parent cls-home menu-active">
+                    <span class="img iconcls-home">&nbsp;</span>
+                    <span class="link-text">Tổng quan</span>
+                </a>
+                <a class="parent cls-report">
+                    <span class="img iconcls-report">&nbsp;</span>
+                    <span class="link-text">Báo cáo</span>
+                </a>
+                
+                <a class="parent cls-deliveryledger">
+                    <span class="img iconcls-deliveryledger">&nbsp;</span>
+                    <span class="link-text">Sổ giao hàng</span>
+                </a>
+
+                <a class="parent cls-purchares">
+                    <span class="img iconcls-purchares">&nbsp;</span>
+                    <span class="link-text">Mua hàng</span>
+                </a>
+                
+                <a class="parent cls-stock">
+                    <span class="img iconcls-stock">&nbsp;</span>
+                    <span class="link-text">Kho</span>
+                </a>
+
+                <a class="parent cls-cash">
+                    <span class="img iconcls-cash">&nbsp;</span>
+                    <span class="link-text">Quỹ tiền</span>
+                </a>
+                
+                <a class="parent cls-payment-receipt">
+                    <span class="img iconcls-payment-receipt">&nbsp;</span>
+                    <span class="link-text">Chi phí</span>
+                </a>
+
+                <a class="parent cls-promotion">
+                    <span class="img iconcls-promotion">&nbsp;</span>
+                    <span class="link-text">Khuyến mại</span>
+                </a>
+                
+                <a class="parent cls-dictionary">
+                    <span class="img iconcls-dictionary">&nbsp;</span>
+                    <span class="link-text">Danh mục</span>
+                </a>
+                
+
+                <a class="parent cls-meinvoice">
+                    <span class="img iconcls-meinvoice">&nbsp;</span>
+                    <span class="link-text">Hóa đơn điện tử</span>
+                </a>
+
+                <a class="parent cls-settings">
+                    <span class="img iconcls-settings">&nbsp;</span>
+                    <span class="link-text">Thiết lập</span>
+                </a>
+
+                <a class="parent cls-menuhelp">
+                    <span class="img iconcls-menuhelp">&nbsp;</span>
+                    <span class="link-text">Trợ giúp</span>
+                </a>
+           
+                <a class="parent cls-omnichannel">
+                    <span class="img iconcls-omnichannel">&nbsp;</span>
+                    <span class="link-text">OCM</span>
+                </a>
+                <a class="parent cls-fiveshop">
+                    <span class="img iconcls-fiveshop">&nbsp;</span>
+                    <span class="link-text">5Shop</span>
+                </a>
+            </div>
+            <div class="bottom-content-menu">
+                <a class="parent cls-home">
+                    <span class="img iconcls-ward">&nbsp;</span>
+                    <span class="link-text">Hàng hóa</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Phần content-->
+    <div class="content">
+        <div class="grid-master">
+            <div class="cotainer-toolbar-taskbar">
+                <div class="toolbar">
+                    <button class="toolbar-item add-new" title="Ctrl+1">
+                        <div class="icon add-new">
+                        </div>
+                        <span>Thêm mới</span>
+                        <div class="arrow-down-white">
+                        </div>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item duplicate">
+                        <div class="icon duplicate">
+                        </div>
+                        <span>Nhân bản</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item view">
+                        <div class="icon view">
+                        </div>
+                        <span>Xem</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item edit" title="Ctrl+E">
+                        <div class="icon edit">
+                        </div>
+                        <span>Sửa</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item delete" title="Ctrl+D" disabled>
+                        <div class="icon delete">
+                        </div>
+                        <span>Xóa</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item reload">
+                        <div class="icon reload">
+                        </div>
+                        <span>Nạp</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item import">
+                        <div class="icon import">
+                        </div>
+                        <span>Nhập khẩu</span>
+                    </button>
+                    <div class="sperator"></div>
+                    <button class="toolbar-item export">
+                        <div class="icon export">
+                        </div>
+                        <span>Xuất khẩu</span>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="table-content">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th fieldName="" class="uncheck"></th>
+                            <th fieldName="CustomerNo">
+                                <div class="th-name">Mã khách hàng</div>
+
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="CustomerName">
+                                <div class="th-name">
+                                    Tên khách hàng
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="CustomerPhone">
+                                <div class="th-name">
+                                    Điện thoại
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="Birthday">
+                                <div class="th-name">
+                                    Ngày sinh
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="CustomerGroup">
+                                <div class="th-name">
+                                    Nhóm khách hàng
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="Note">
+                                <div class="th-name">
+                                    Ghi chú
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                            <th fieldName="Status">
+                                <div class="th-name">
+                                    Trạng thái
+                                </div>
+                                <div class="selector">
+                                    <span class="type">*</span>
+                                    <input class="input" />
+                                </div>
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+
+            <div id="dialog" title="Thêm mới khách hàng">
+                <div class="contain input-data">
+                    <div class="misa-label info-base">Thông tin cơ bản</div>
+                    <div class="customer-info">
+                        <div class="customer-id">
+                            <span class="title">Mã khách hàng</span>
+                            <input property="CustomerNo" />
+                        </div>
+                        <div class="customer-name">
+                            <span class="title">Tên khách hàng</span>
+                            <input property="CustomerName" />
+                        </div>
+                    </div>
+                    <div class="group-contact">
+                        <div class="group-info">
+                            <span class="title">Nhóm khách hàng</span>
+                            <input property="CustomerGroup" />
+                        </div>
+                        <div class="contact">
+                            <span class="title">Điện thoại</span>
+                            <input property="CustomerPhone" />
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div>
+                            <span class="title address-name">Địa chỉ</span>
+                        </div>
+                        <div class="local">
+                            <div class="one">
+                                <input placeholder="Tỉnh thành" />
+                                <input placeholder="Quận/huyện" />
+                                <input placeholder="Phường/xã" />
+                            </div>
+                            <div class="two">
+                                <input placeholder="Số nhà, đường phố" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mail-birth">
+                        <div class="mail">
+                            <span class="title">Email</span>
+                            <input />
+                        </div>
+                        <div class="birthday">
+                            <span class="title">Ngày sinh</span>
+                            <input property="Birthday" />
+                        </div>
+                    </div>
+                    <div class="note">
+
+                        <span class="title note-title">Ghi chú</span>
+                        <input property="Note" />
+                    </div>
+                    <div class="misa-label member-title">Thẻ thành viên</div>
+                    <div class="member-card-info">
+                        <div class="memner-no">
+                            <span class="title">Mã thẻ thành viên</span>
+                            <input />
+                        </div>
+                        <div class="member-level">
+                            <span class="title">Hạng thẻ</span>
+                            <input />
+                        </div>
+                    </div>
+                    <div class="identity-card">
+                        <span class="title cmnd">Số CMND/Hộ chiếu</span>
+                        <input />
+
+                    </div>
+                    <div class="misa-label company-title">Thông tin công ty</div>
+                    <div class="company-info">
+                        <div class="company-name">
+                            <span class="title">Tên công ty</span>
+                            <input />
+                        </div>
+                        <div class="tax">
+                            <span class="title">Mã số thuế</span>
+                            <input />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain button-data">
+                    <a class="help">
+                        <span class="icon-help"></span>
+                        <div>
+                            Trợ giúp
+                        </div>
+
+                    </a>
+                    <div class="button-right">
+                        <button class="save">
+                            <span class="icon-save"></span>
+                            <div>Lưu</div>
+                        </button>
+                        <button class="save-add">
+                            <span class="add"></span>
+                            <div>Lưu và thêm mới</div>
+                        </button>
+                        <button class="cancel">
+                            <span class="icon-x"></span>
+                            <div>Hủy bỏ</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+
+    </div>
+
+    <script src="../Scripts/libraries/jquery-3.4.1.js"></script>
+    <script src="../Scripts/libraries/jquery-1.12.4.js"></script>
+    <script src="../Scripts/libraries/jquery-ui.js"></script>
+    <script src="../Scripts/common/common.js"></script>
+    <script src="../Scripts/common/base.js"></script>
+    <script src="../Scripts/views/receipt.js"></script>
+</body>
+</html>

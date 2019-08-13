@@ -1,0 +1,338 @@
+﻿.content {
+    position: absolute;
+    left: 140px;
+    top: 52px;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background-color: #e2e2e2;
+    overflow: hidden;
+}
+
+.grid-master {
+    position: absolute;
+    height: calc(80% - 16px);
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    background-color: #fff;
+}
+
+.cotainer-toolbar-taskbar {
+    height: 36px;
+    background-color: #fff;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+
+/*TOOLBAR*/
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 100%;
+    background-color: #026b97;
+    display: flex;
+}
+
+    /*toolbar item*/
+    .toolbar .toolbar-item {
+        color: #fff;
+        line-height: 36px;
+        padding: 0 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: #026b97;
+        border: none;
+        outline: 0;
+    }
+
+        .toolbar .toolbar-item:hover {
+            background-color: #0088c2;
+        }
+
+        .toolbar .toolbar-item:disabled {
+            cursor: default;
+            opacity: 0.5;
+        }
+
+        .toolbar .toolbar-item span {
+            padding-left: 8px;
+        }
+    /*toolbar sperator*/
+    .toolbar .sperator {
+        height: 32px;
+        margin-top: 2px;
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        border-left-color: #1882ae;
+        border-right-color: #1882ae;
+    }
+
+ .icon {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        background: url('../../Contents/images/common-icon.png') no-repeat -2px 0px;
+    }
+
+/*Icon thêm mới*/
+.icon.add-new {
+    background-position: -1px -127px;
+}
+/*Icon mũi tên màu trắng*/
+.arrow-down-white {
+    background: url('/Contents/images/arrow-down-white.png') no-repeat !important;
+    margin-left: 15px;
+    width: 7px;
+    height: 3px;
+    cursor: pointer;
+}
+/*Icon nhân bản*/
+.icon.duplicate {
+    background-position: -976px -127px;
+}
+/*Icon xem*/
+.icon.view {
+    background-position: -1602px -127px;
+}
+
+.icon.delete-row {
+    background-position: -2px 0px;
+    margin-left: 8px;
+}
+
+/*Icon chỉnh sửa*/
+.icon.edit {
+    background-position: -77px -203px;
+}
+/*Icon xóa*/
+.icon.delete {
+    background-position: -1076px -127px;
+}
+/*Icon tải lại (nạp)*/
+.icon.reload {
+    background-position: -876px -127px;
+}
+
+/*Icon nhập khẩu*/
+.icon.import {
+    background-position: -177px -127px;
+}
+
+/*Icon xuất khẩu*/
+.icon.export {
+    background-position: -127px -127px;
+}
+
+/*
+        Thiết kế css phần table-content
+        Người tạo: Ngọc Ánh
+    */
+.table-content {
+    height: 464px;
+    overflow: auto;
+}
+
+    .table-content .main-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table-content .main-table th {
+            border: 1px solid #d0d0d0;
+            height: 64px;
+            position: relative;
+            left: 0;
+            top: 0;
+            background-color: #f6f6f6;
+            
+        }
+        .table-content .main-table tbody {
+            overflow: auto;
+            
+        }
+
+        .table-content .main-table td {
+            border: 1px solid #d0d0d0;
+            height: 50px;
+        }
+
+        .table-content .main-table tr:nth-child(even) {
+            background: #CCC
+        }
+
+        .table-content .main-table tr:nth-child(odd) {
+            background: #FFF
+        }
+
+        .table-content .main-table th .th-name {
+            width: 100%;
+            height: 18px;
+            padding: 7px 0;
+        }
+
+        .table-content .main-table th .selector {
+            width: 100%;
+            height: calc(100%-32px);
+            display: flex;
+        }
+
+        .table-content .main-table th .type {
+            border: 1px solid #d0d0d0;
+            background-color: #ffffff;
+            width: 22px;
+            height: 20px;
+            padding: 5px;
+            float: left;
+        }
+
+        .table-content .main-table th input {
+            border: 1px solid #d0d0d0;
+            background-color: #ffffff;
+            width: 70%;
+            height: 20px;
+            border-radius: 2px;
+            padding: 5px 10px;
+        }
+
+
+/*
+    Thiết kế giao diện phần dialog
+*/
+#dialog {
+    display: none;
+}
+
+#dialog .contain.input-data {
+    width: 665px;
+    padding: 16px 16px 0;
+    overflow: auto;
+    height: 86%;
+    border-bottom: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+
+.input-data .misa-label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #757575;
+    font-weight: bold;
+    padding: 4px 0;
+}
+.input-data div {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+    .input-data input {
+        height: 26px;
+        padding: 5px;
+        width: 100%;
+    }
+.input-data div .title {
+    margin: 0;
+    padding: 5px 5px;
+    width: 127px;
+    text-align: left;
+}
+    .input-data .address {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+    }
+.title.address-name {
+    width: 83px !important;
+}
+    .input-data .address .local {
+        flex-direction: column;
+        margin: 0;
+    }
+    .input-data .address .local .one {
+        flex-direction: row;
+        margin: 0;
+    }
+        .input-data .address .local .two {
+            margin: 0;
+        }
+
+.input-data .note input {
+    min-height: 100px;
+    margin-right: 10px;
+}
+    .input-data .note .note-title {
+        width: 100px;
+    }
+
+    .input-data .identity-card .cmnd {
+        width: 100px;
+    }
+
+.input-data .identity-card input {
+    margin:0 8px 0 2px;
+}
+
+#dialog .contain.button-data {
+    position: relative;
+    width: 681px;
+    height: 35px;
+    padding: 0 8px;
+    margin: 8px 0px;
+}
+
+.button-data .help {
+    float: left;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+    .button-data .help .icon-help {
+        width: 21px;
+        height: 15px;
+        background: url('../../Contents/icons/help.png') no-repeat center;
+    }
+
+    .button-data .help div {
+        margin-left: 4px;
+    }
+
+    .button-data .button-right {
+        float: right;
+    }
+    .button-data .button-right button {
+        height: 35px;
+        color: #026b97;
+        border: none;
+        background-color: #ffffff;
+    }
+        .button-data .button-right button:hover {
+            cursor: pointer;
+            border: 1px solid #d0d0d0;
+        }
+        .button-data .button-right div {
+            margin-left: 3px;
+            float: right;
+        }
+
+        .button-data .button-right .save {
+            background-color: #026b97;
+            color: #fff;
+            flex-direction: row;
+        }
+        .button-data .button-right .save .icon-save {
+            width: 16px;
+            height: 16px;
+            background: url('../../Contents/images/common-icon.png') no-repeat center;
+            background-position: -327px -127px;
+            
+        }
+        .button-data .button-right .save-add {
+            border: 1px solid #026b97;
+        }

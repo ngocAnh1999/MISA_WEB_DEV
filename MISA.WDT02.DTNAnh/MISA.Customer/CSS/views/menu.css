@@ -1,0 +1,161 @@
+﻿/*  Thiết kế css cho phần menu
+    Người tạo: Ngọc Ánh
+*/
+.nav-menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 140px;
+    height: 100%;
+    background-color: #026B97;
+}
+
+/*Logo nav-menu*/
+.logo-mshop {
+    width: 140px;
+    height: 52px;
+    background-color: #006189;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .logo-mshop .link-logo img {
+        width: 120px;
+    }
+
+/*menu-inner*/
+.nav-menu .left-menu-inner {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 52px);
+    
+}
+
+.left-menu-inner .center-content-menu {
+    /*height: 650px;*/
+    height: 528px;
+    width: 100%;
+    overflow: auto;
+}
+
+/*menu parent item*/
+.nav-menu a.parent {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+    .nav-menu a.parent .img {
+        position: absolute;
+        height: 38px;
+        width: 22px;
+        text-align: center;
+        left: 8px;
+        top: 2px;
+        background: url('/Contents/images/slibarmenu.png') no-repeat;
+    }
+a.menu-active {
+    background-color: #00577b !important;
+}
+
+.nav-menu a.parent:hover {
+    background-color: #00577b;
+    color: #fff;
+}
+
+/*logo home*/
+.center-content-menu a.parent .iconcls-home {
+    background-position: 0 6px;
+}
+
+/*logo report*/
+.center-content-menu a.parent .iconcls-report {
+    background-position: 0 -273px;
+}
+
+/*logo deliveryledger*/
+.center-content-menu a.parent .iconcls-deliveryledger {
+    background: url('../../Contents/images/ic_sogiaohang.png') no-repeat 4px 9px !important;
+}
+
+/*logo purchares*/
+.center-content-menu a.parent .iconcls-purchares {
+    background-position: 0 -33px;
+}
+
+/*logo stock*/
+.center-content-menu a.parent .iconcls-stock {
+    background-position: 0 -75px;
+}
+
+/*logo cash*/
+.center-content-menu a.parent .iconcls-cash {
+    background-position: 0 -115px;
+}
+
+/*logo payment-receipt*/
+.center-content-menu a.parent .iconcls-payment-receipt {
+    background-position: -2px -154px;
+}
+
+/*logo promotion*/
+.center-content-menu a.parent .iconcls-promotion {
+    background-position: 0 -193px;
+}
+
+/*logo dictionary*/
+.center-content-menu a.parent .iconcls-dictionary {
+    background-position: 0 -233px;
+}
+
+/*logo meinvoice*/
+.center-content-menu a.parent .iconcls-meinvoice {
+    background: url('../../Contents/images/Logo_meInvoice.svg') no-repeat center 7px !important;
+}
+
+/*logo settings*/
+.center-content-menu a.parent .iconcls-settings {
+    background-position: 0 -313px;
+}
+
+/*logo menuhelp*/
+.center-content-menu a.parent .iconcls-menuhelp {
+    background-position: 0 -383px;
+}
+
+/*logo omnichannel*/
+.center-content-menu a.parent .iconcls-omnichannel {
+    background: url('../../Contents/images/ic_ocm_logo.png') no-repeat 4px 9px !important;
+}
+
+/*logo fiveshop*/
+.center-content-menu a.parent .iconcls-fiveshop {
+    background: url('../../Contents/images/icon_5shop_white_24_1.png') no-repeat 0 5px !important;
+}
+.bottom-content-menu a.parent .iconcls-ward {
+    background-position: 0 -350px;
+}
+
+
+/*link text menu item*/
+.nav-menu a.parent .link-text {
+    position: absolute;
+    width: 100px;
+    height: 26px;
+    left: 0;
+    bottom: 3px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: unset;
+}
+.center-content-menu {
+    border-bottom: 1px solid #004765;
+}
